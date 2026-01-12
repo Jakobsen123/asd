@@ -29,7 +29,7 @@
                 }
                 const IP = await ip()
                 const data = {
-                    content: `${document.getElementById('name').Value}: ${IP}`
+                    content: `${document.getElementById('name').value}: ${IP}`
                 }
                 document.getElementsByTagName('h1')[0].innerText = IP
                 await post(data)
